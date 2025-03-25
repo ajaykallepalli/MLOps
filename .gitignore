@@ -39,4 +39,13 @@ wheels/
 .idea_modules/
 
 # macOS
-.DS_Store 
+.DS_Store
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Data directories
+save_data/
+data/
+images/ 
