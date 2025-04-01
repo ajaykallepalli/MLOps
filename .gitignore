@@ -47,5 +47,8 @@ mlflow.db
 
 # Data directories
 save_data/
-data/
+data/*.csv
+data/*.train
+data/*.test
+data/*.names
 images/ 
