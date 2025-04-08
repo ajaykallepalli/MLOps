@@ -1,1 +1,4 @@
 /adult.data
+/adult.test
+/processed/
+*.pkl
