@@ -3,8 +3,10 @@ stages:
     cmd: python src/preprocessing.py
     deps:
       - src/preprocessing.py
-      - data/adult.data
-      - data/adult.test
+      - save_data/x_train.parquet
+      - save_data/x_test.parquet
+      - save_data/y_train.csv
+      - save_data/y_test.csv
     outs:
       - data/processed/processed_train_data.csv
       - data/processed/processed_test_data.csv

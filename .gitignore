@@ -46,7 +46,8 @@ mlruns/
 mlflow.db
 
 # Data directories
-save_data/
+save_data/*
+!save_data/*.dvc
 data/*.csv
 data/*.train
 data/*.test
