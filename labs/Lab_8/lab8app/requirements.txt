@@ -1,0 +1,5 @@
+fastapi[all]
+uvicorn
+mlflow>=2.0.0 # Use a recent version compatible with the server
+pandas
+scikit-learn==1.2.2 # Pin to the version used for training the loaded model 
