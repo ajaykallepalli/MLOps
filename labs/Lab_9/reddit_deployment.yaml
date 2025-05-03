@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-deployment
+  labels:
+    app: reddit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reddit
+  template:
+    metadata:
+      labels:
+        app: reddit
+    spec:
+      containers:
+      - name: reddit-app
+        image: reddit-app # This image needs to be built within minikube's docker daemon
+        imagePullPolicy: IfNotPresent # Important for local images in minikube
+        ports:
+        - containerPort: 8000 
